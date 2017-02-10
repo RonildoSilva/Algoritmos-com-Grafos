@@ -1,9 +1,15 @@
 package bfs;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import dfs.DFS;
+
 public class Main {
 
 	public static void main(String[] args) {
 		BFS bfs = new BFS();
+		DFS dfs = new DFS();
 		
 		Vertice v1 = new Vertice(new Dado(1));
 		Vertice v2 = new Vertice(new Dado(2));
@@ -17,5 +23,15 @@ public class Main {
 		v2.adicionarVizinho(v3);
 		
 		bfs.bfs(v1);
+		
+		/****/
+		List<Vertice> lista = new ArrayList<Vertice>();
+		lista.add(v1);
+		lista.add(v2);
+		lista.add(v3);
+		lista.add(v4);
+		lista.add(v5);
+		
+		dfs.dfs(lista);
 	}
 }
