@@ -23,6 +23,16 @@ public class DFS {
 		
 	}
 
+	private void dfsRecursivo(Vertice vertice) {
+		System.out.println(vertice);
+		for (Vertice v: vertice.getVizinhanca()) {
+			if(!v.isVisitado()){
+				v.setVisitado(true);
+				dfsRecursivo(v);
+			}
+		}
+	}
+	
 	private void dfsComPilha(Vertice vertice) {
 		this.pilha.add(vertice);
 		vertice.setVisitado(true);
