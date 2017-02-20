@@ -1,26 +1,26 @@
-package bfs;
+package entity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Vertice {
 
-	private Dado dado;
+	private Cidade dado;
 	private boolean visitado;
 	private List<Vertice> vizinhanca;
 	
-	public Vertice(Dado dado) {
+	public Vertice(Cidade dado) {
 		this.dado = dado;
 		this.vizinhanca = new ArrayList<>();
 	}
 	
-	public Dado getDado() {
+	public Cidade getDado() {
 		return dado;
 	}
 
 
 
-	public void setDado(Dado dado) {
+	public void setDado(Cidade dado) {
 		this.dado = dado;
 	}
 

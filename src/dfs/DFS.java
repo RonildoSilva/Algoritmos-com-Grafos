@@ -3,7 +3,7 @@ package dfs;
 import java.util.List;
 import java.util.Stack;
 
-import bfs.Vertice;
+import entity.Vertice;
 
 public class DFS {
 	private Stack<Vertice> pilha;

@@ -3,6 +3,8 @@ package bfs;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import entity.Vertice;
+
 public class BFS {
 
 	public void bfs(Vertice vertice){

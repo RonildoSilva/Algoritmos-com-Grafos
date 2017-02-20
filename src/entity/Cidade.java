@@ -1,10 +1,13 @@
-package bfs;
+package entity;
 
-public class Dado {
+public class Cidade {
 
 	private int numero;
+	private String nome;
+	private int x;
+	private int y;
 	
-	public Dado(int numero) {
+	public Cidade(int numero) {
 		this.numero = numero;
 	}
 
